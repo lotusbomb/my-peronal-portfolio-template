@@ -15,12 +15,15 @@ function Projects() {
                 className="project-img"
               />
             </div>
-            <h2 className="experience-sub-title project-title">Meta Website using HTML, CSS & JavaScript</h2>
+            <h2 className="experience-sub-title project-title">
+              Meta Website using HTML, CSS & JavaScript
+            </h2>
             <div className="btn-container">
               <button
                 className="btn btn-color-2 project-btn"
                 onClick={() =>
-                  (window.location.href = "https://github.com/lotusbomb/")
+                  (window.location.href =
+                    "https://github.com/lotusbomb/Meta-model-website")
                 }
               >
                 Github
@@ -45,17 +48,25 @@ function Projects() {
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Portfolio using React and Tailwind CSS</h2>
+            <h2 class="experience-sub-title project-title">
+              Portfolio using React and Tailwind CSS
+            </h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/lotusbomb/'"
+                className="btn btn-color-2 project-btn"
+                onClick={() =>
+                  (window.location.href =
+                    "https://github.com/lotusbomb/first-portfolio-with-react")
+                }
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://first-portfolio-with-react.netlify.app/'"
+                className="btn btn-color-2 project-btn"
+                onClick={() =>
+                  (window.location.href =
+                    "https://first-portfolio-with-react.netlify.app/")
+                }
               >
                 Live Demo
               </button>
@@ -70,17 +81,25 @@ function Projects() {
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Educational Landing Page using HTML, CSS & JavaScript</h2>
+            <h2 class="experience-sub-title project-title">
+              Educational Landing Page using HTML, CSS & JavaScript
+            </h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/lotusbomb/'"
+                className="btn btn-color-2 project-btn"
+                onClick={() =>
+                  (window.location.href =
+                    "https://github.com/lotusbomb/Educational-website-landing-page")
+                }
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://main--eeducational-landing-page.netlify.app/'"
+                className="btn btn-color-2 project-btn"
+                onClick={() =>
+                  (window.location.href =
+                    "https://eeducational-landing-page.netlify.app/")
+                }
               >
                 Live Demo
               </button>
@@ -95,17 +114,25 @@ function Projects() {
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Social Profile using HTML and CSS</h2>
+            <h2 class="experience-sub-title project-title">
+              Social Profile using HTML and CSS
+            </h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/lotusbomb/'"
+                className="btn btn-color-2 project-btn"
+                onClick={() =>
+                  (window.location.href =
+                    "https://github.com/lotusbomb/Social-Link-Profile")
+                }
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://main--social-link-profile-fem.netlify.app/'"
+                className="btn btn-color-2 project-btn"
+                onClick={() =>
+                  (window.location.href =
+                    "https://social-link-profile-fem.netlify.app")
+                }
               >
                 Live Demo
               </button>
