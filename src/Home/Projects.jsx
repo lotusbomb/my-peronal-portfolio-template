@@ -1,151 +1,120 @@
 import React from "react";
+import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
+
+const items =[
+  {
+    image: "./assets/meta-website.png",
+    title: "Meta Website using HTML, CSS & JavaScript",
+    button1: "Github",
+    button2: "Live Demo",
+    linkg: "https://github.com/lotusbomb/Meta-model-website",
+    linkl: "https://main--meta-website-model.netlify.app/",
+    icon1: <FaHtml5 />,
+    icon2: <FaCss3Alt />,
+    icon3: <IoLogoJavascript />
+  },
+  {
+    image: "./assets/react-portfolio.png",
+    title: "Portfolio using React and Tailwind CSS",
+    button1: "Github",
+    button2: "Live Demo",
+    linkg: "https://github.com/lotusbomb/first-portfolio-with-react",
+    linkl: "https://first-portfolio-with-react.netlify.app/",
+    icon1: <FaHtml5 />,
+    icon2: <FaCss3Alt />,
+    icon3: <IoLogoJavascript />,
+    icon4: <FaReact />,
+    icon5: <RiTailwindCssFill />,
+  },
+  {
+    image: "./assets/normal-website.png",
+    title: "Educational Landing Page using HTML, CSS & JavaScript",
+    button1: "Github",
+    button2: "Live Demo",
+    linkg: "https://github.com/lotusbomb/Educational-website-landing-page",
+    linkl: "https://eeducational-landing-page.netlify.app/",
+    icon1: <FaHtml5 />,
+    icon2: <FaCss3Alt />,
+    icon3: <IoLogoJavascript />
+  },
+  {
+    image: "./assets/social-profile.png",
+    title: "Social Profile using HTML and CSS",
+    button1: "Github",
+    button2: "Live Demo",
+    linkg: "https://github.com/lotusbomb/Social-Link-Profile",
+    linkl: "https://social-link-profile-fem.netlify.app",
+    icon1: <FaHtml5 />,
+    icon2: <FaCss3Alt />
+  },
+  {
+    image: "./assets/saas website.png",
+    title: "SaaS website",
+    button1: "Github",
+    button2: "Live Demo",
+    linkg: "https://github.com/lotusbomb/saas-website",
+    linkl: "https://saas-website-tan.vercel.app/",
+    icon1: <FaHtml5 />,
+    icon2: <FaCss3Alt />,
+    icon3: <IoLogoJavascript />,
+    icon4: <FaReact />,
+    icon5: <RiTailwindCssFill />,
+    icon6: <SiTypescript />
+  },
+  {
+    image: "./assets/transact.png",
+    title: "A banking app called Transact",
+    button1: "Github",
+    button2: "Live Demo",
+    linkg: "https://github.com/lotusbomb/Transact-Banking-App",
+    linkl: "https://transact-banking-app.vercel.app/",
+    icon1: <FaHtml5 />,
+    icon2: <FaCss3Alt />,
+    icon3: <IoLogoJavascript />,
+    icon4: <FaReact />,
+    icon5: <RiTailwindCssFill />,
+    icon6: <SiTypescript />
+  },
+  {
+    image: "./assets/shopping-cart.png",
+    title: "A shopping cart with few functions",
+    button1: "Github",
+    button2: "Live Demo",
+    linkg: "https://github.com/lotusbomb/shopping-cart-practice",
+    linkl: "https://shopping-cart-practice.vercel.app/",
+    icon1: <FaHtml5 />,
+    icon2: <FaCss3Alt />,
+    icon4: <FaReact />,
+    icon6: <SiTypescript />
+  },
+]
 
 function Projects() {
   return (
     <section id="projects">
-      <p className="section__text__p1">Browse My Recent</p>
-      <h1 className="title">Projects</h1>
-      <div className="experience-details-container">
-        <div className="about-containers project-container">
-          <div className="details-container color-container">
-            <div className="article-container">
-              <img
-                src="./assets/meta-website.png"
-                alt="Project 1"
-                className="project-img"
-              />
+      <h1 className="span-n">Browse My Recent</h1>
+      <p className="paragraph-h">Projects</p>
+      <div className="container">
+        {items.map((index) => (
+          <div key={index.title} className="containers">
+            <div className="image">
+              <img src={index.image} alt="" />
             </div>
-            <h2 className="experience-sub-title project-title">
-              Meta Website using HTML, CSS & JavaScript
-            </h2>
-            <div className="btn-container">
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() =>
-                  (window.location.href =
-                    "https://github.com/lotusbomb/Meta-model-website")
-                }
-              >
-                Github
-              </button>
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() =>
-                  (window.location.href =
-                    "https://main--meta-website-model.netlify.app/")
-                }
-              >
-                Live Demo
-              </button>
+            <p className="spacing">{index.title}</p>
+            <div className="icon">
+              <a className="mini-icon" href="/">{index.icon1}{index.icon2}{index.icon3}{index.icon4}{index.icon5}{index.icon6}</a>
+            </div>
+            <div className="button">
+              <button className="btn btn-1 btnn"><a href={index.linkg}>{index.button1}</a></button>
+              <button className="btn btn-2 btnn"><a href={index.linkl}>{index.button2}</a></button>
             </div>
           </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/react-portfolio.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Portfolio using React and Tailwind CSS
-            </h2>
-            <div class="btn-container">
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() =>
-                  (window.location.href =
-                    "https://github.com/lotusbomb/first-portfolio-with-react")
-                }
-              >
-                Github
-              </button>
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() =>
-                  (window.location.href =
-                    "https://first-portfolio-with-react.netlify.app/")
-                }
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/normal-website.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Educational Landing Page using HTML, CSS & JavaScript
-            </h2>
-            <div class="btn-container">
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() =>
-                  (window.location.href =
-                    "https://github.com/lotusbomb/Educational-website-landing-page")
-                }
-              >
-                Github
-              </button>
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() =>
-                  (window.location.href =
-                    "https://eeducational-landing-page.netlify.app/")
-                }
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/social-profile.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Social Profile using HTML and CSS
-            </h2>
-            <div class="btn-container">
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() =>
-                  (window.location.href =
-                    "https://github.com/lotusbomb/Social-Link-Profile")
-                }
-              >
-                Github
-              </button>
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() =>
-                  (window.location.href =
-                    "https://social-link-profile-fem.netlify.app")
-                }
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        className="icon arrow"
-        onClick={() => (window.location.href = "./#contact")}
-      />
+        
     </section>
   );
 }

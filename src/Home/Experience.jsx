@@ -1,124 +1,37 @@
 import React from "react";
+import { DiMongodb } from "react-icons/di";
+import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiFramer, SiNpm, SiRedux, SiTypescript, SiVite } from "react-icons/si";
+import { TbApi, TbSql } from "react-icons/tb";
+
+const icons = [
+  <FaHtml5/>, <FaCss3Alt/>, <IoLogoJavascript/>, <FaReact/>, <RiTailwindCssFill/>, <SiTypescript/>, <RiNextjsFill/>, <SiRedux/>, <SiFramer/>, <FaGithub/>, <FaGitAlt/>, <SiVite/>, <SiNpm />, <FaNodeJs />, <DiMongodb />, <TbSql />, <TbApi />,
+]
 
 function Experience() {
   return (
     <section id="experience">
-      <p className="section__text__p1">Explore My</p>
-      <h1 className="title">Experience</h1>
-      <div className="experience-details-container">
-        <div className="about-containers">
-          <div className="details-container">
-            <h2 className="experience-sub-title">Frontend Development</h2>
-            <div className="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+      <div className="about">
+        <h1 className="span-n">Take A Look At My</h1>
+        <p className="paragraph-h">Experience</p>
+        <div className="about-details-container">
+          <div className="about-containers">
+            <div className="details-container det">
+              <div className="article-container">
+              {icons.map((list, index) => (
+                <div className="icons" key={index} >
+                  <span>{list}</span>
                 </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>JAVASCRIPT</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
+              ))}
+              </div>
             </div>
-          </div>
-          <div className="details-container">
-            <h2 className="experience-sub-title">Frontend Development</h2>
-            <div className="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>TAILWIND</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
 
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>REACT</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>RESTFUL APIs</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>GIT/GITHUB</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        className="icon arrow"
-        onClick={() => (window.location.href = "./#projects")}
-      />
     </section>
   );
 }
