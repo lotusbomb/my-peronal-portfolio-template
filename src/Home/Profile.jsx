@@ -1,4 +1,6 @@
 import React from "react";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 function Profile() {
   return (
@@ -33,21 +35,9 @@ function Profile() {
             
           </div>
           <div className="socials">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              onClick={() =>
-                (window.location.href =
-                  "https://www.linkedin.com/in/onyinye-favour/")
-              }
-            />
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              onClick={() =>
-                (window.location.href = "https://github.com/lotusbomb/")
-              }
-            />
+            <a href="https://www.linkedin.com/in/onyinye-favour/"><FaLinkedin/></a>
+            <a href="https://github.com/lotusbomb/"><FaGithub/></a>
+            
           </div>
         </div>
       </div>
