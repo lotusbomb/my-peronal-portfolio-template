@@ -17,12 +17,12 @@ const items =[
     icon3: <IoLogoJavascript />
   },
   {
-    image: "./assets/react-portfolio.png",
-    title: "Portfolio using React and Tailwind CSS",
+    image: "./assets/provision.png",
+    title: "ProVision Official Website",
     button1: "Github",
     button2: "Live Demo",
-    linkg: "https://github.com/lotusbomb/first-portfolio-with-react",
-    linkl: "https://first-portfolio-with-react.netlify.app/",
+    linkg: "https://github.com/lotusbomb/ProVision",
+    linkl: "https://pro-vision.vercel.app/",
     icon1: <FaHtml5 />,
     icon2: <FaCss3Alt />,
     icon3: <IoLogoJavascript />,

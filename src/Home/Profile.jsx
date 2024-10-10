@@ -12,7 +12,7 @@ function Profile() {
         <div className="text">
           <p className="paragraph">Hello, I'm</p>
           <h1 className="span">Onyinyechi Favour</h1>
-          <p className="paragraph">Full Stack Developer-Front End</p>
+          <p className="paragraph">Full Stack Developer</p>
           <div className="btn-container">
             <button
               className="btn btn-1"
