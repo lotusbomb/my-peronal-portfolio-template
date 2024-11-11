@@ -3,6 +3,7 @@ import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 
 const items =[
   {
@@ -59,21 +60,21 @@ const items =[
     linkl: "https://saas-website-tan.vercel.app/",
     icon1: <FaHtml5 />,
     icon2: <FaCss3Alt />,
-    icon3: <IoLogoJavascript />,
+    icon3: <RiNextjsFill />,
     icon4: <FaReact />,
     icon5: <RiTailwindCssFill />,
     icon6: <SiTypescript />
   },
   {
-    image: "./assets/transact.png",
-    title: "A banking app called Transact",
+    image: "./assets/skyline.png",
+    title: "A real estate landing page",
     button1: "Github",
     button2: "Live Demo",
-    linkg: "https://github.com/lotusbomb/Transact-Banking-App",
-    linkl: "https://transact-banking-app.vercel.app/",
+    linkg: "https://github.com/lotusbomb/skyline-properties",
+    linkl: "https://skyline-properties.vercel.app/",
     icon1: <FaHtml5 />,
     icon2: <FaCss3Alt />,
-    icon3: <IoLogoJavascript />,
+    icon3: <RiNextjsFill />,
     icon4: <FaReact />,
     icon5: <RiTailwindCssFill />,
     icon6: <SiTypescript />
