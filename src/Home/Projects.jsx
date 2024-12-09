@@ -18,17 +18,18 @@ const items =[
     icon3: <IoLogoJavascript />
   },
   {
-    image: "./assets/provision.png",
+    image: "./assets/new-provision.png",
     title: "ProVision Official Website",
     button1: "Github",
     button2: "Live Demo",
-    linkg: "https://github.com/lotusbomb/ProVision",
-    linkl: "https://pro-vision.vercel.app/",
+    linkg: "https://github.com/lotusbomb/provision-site",
+    linkl: "https://www.provissioninnovations.com/",
     icon1: <FaHtml5 />,
     icon2: <FaCss3Alt />,
-    icon3: <IoLogoJavascript />,
+    icon3: <RiNextjsFill />,
     icon4: <FaReact />,
     icon5: <RiTailwindCssFill />,
+    icon6: <SiTypescript />
   },
   {
     image: "./assets/normal-website.png",
